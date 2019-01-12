@@ -2,15 +2,24 @@ img{
 	margin-top:20px;
 }
 
-button{ float: right; }
+button{ float: right; 
+}
 
-.container{margin-bottom:40px;}
+.container{
+	margin-bottom:40px;
+}
 
 form{ display: inline; }
 
-#eaten{color:lightgrey;}
+#devoured{
+	color:lightgrey;
+}
 
-body{ background-color: #E6E6E6 }
+body{ 
+	background-color: #E6E6E6;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
 
 h1 {font-family: 'Modak', cursive;
 	font-size: 55px;
