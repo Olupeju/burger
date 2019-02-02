@@ -9,7 +9,7 @@ router.get("/", function(req, res) {
   burger.all(function(data) {
   	//set table data as an array with key burger
     var hbsObject = {
-      burger: data
+      burgers: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
@@ -18,7 +18,8 @@ router.get("/", function(req, res) {
 
 //post new burger to the table
 router.post("/", function(req, res){
-	console.log(req.body.input);
+  // console.log(req.body.input);
+  // var input = req.body.input;
 	burger.create(req.body.input, function(){
 		res.redirect("/");
 	})
@@ -30,7 +31,7 @@ router.put("/:id", function(req, res) {
 
   console.log(id);
 
-  burger.update("devoured",true, id, function(){
+  burger.update( id, function(){
   	res.redirect("/");
   })
 });
